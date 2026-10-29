@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f4ef">
+  <meta name="description" content="Download PaperNest, a simple handwritten notes app for Android tablets.">
+  <title>PaperNest — handwritten notes</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: #263028;
+      background: #f5f4ef;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      min-height: 100svh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    main {
+      width: min(100%, 440px);
+      padding: 36px 26px;
+      text-align: center;
+      background: #fff;
+      border: 1px solid #e8e9e1;
+      border-radius: 24px;
+      box-shadow: 0 16px 48px rgb(38 48 40 / 8%);
+    }
+
+    .mark {
+      width: 68px;
+      height: 68px;
+      margin: 0 auto 20px;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      background: #4d6b55;
+      border-radius: 21px;
+      font-size: 34px;
+    }
+
+    h1 { margin: 0; font-size: 32px; letter-spacing: -1px; }
+
+    p {
+      margin: 12px 0 26px;
+      color: #6a7168;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .download {
+      min-height: 56px;
+      display: grid;
+      place-items: center;
+      padding: 12px 20px;
+      color: white;
+      background: #4d6b55;
+      border-radius: 16px;
+      font-size: 17px;
+      font-weight: 650;
+      text-decoration: none;
+    }
+
+    .download:focus-visible {
+      outline: 3px solid #9db8a2;
+      outline-offset: 4px;
+    }
+
+    .hint { margin: 18px 0 0; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark" aria-hidden="true">✎</div>
+    <h1>PaperNest</h1>
+    <p>A quiet place for every idea. Download the Android app to start handwriting on your tablet.</p>
+    <a class="download" href="./papernest.apk" download="PaperNest.apk">
+      Download for Android
+    </a>
+    <p class="hint">Android 8.0 or newer. After downloading, open the APK and allow installation if asked.</p>
+  </main>
+</body>
+</html>
